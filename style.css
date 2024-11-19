@@ -6,6 +6,7 @@
 
 html {
   font-size: 64.5%;
+  font-family: "Doto", monospace;
 }
 
 body,
@@ -13,4 +14,110 @@ html {
   width: 100vw;
   height: 100vh;
   min-height: 100%;
+  background: #333;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Play Screen */
+
+.main-title,
+.playerCreationTitle {
+  font-size: 3rem;
+  color: #39ff14;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+#playBtn,
+.playBtn {
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 2px;
+  background-color: #1d1d1d;
+  color: #eaeaea;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+#playBtn:hover,
+.playBtn:hover {
+  background-color: #444444;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* Player Creation */
+
+.playerCreateCont {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.playerCreationTitle {
+  font-size: 2rem;
+}
+
+.playerForm {
+  font-size: 1.2rem;
+  border: 1.5px solid #1d1d1d;
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2px;
+}
+
+.playerNameInput {
+  width: 80%;
+  background-color: #838282;
+  border: none;
+  border-radius: 2px;
+  margin-top: 10px;
+  height: 1.8rem;
+  text-align: center;
+}
+
+.playBtn {
+  margin-top: 20px;
+}
+
+footer {
+  padding: 12.5px 0;
+  width: 100%;
+  text-align: center;
+  color: #eaeaea;
+}
+
+footer a {
+  text-decoration: none;
+  color: #eaeaea;
+  transition: 0.2s all;
+}
+
+footer a:hover {
+  color: #39ff14;
+  font-size: 1.1rem;
 }
